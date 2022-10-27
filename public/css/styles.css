@@ -24,14 +24,13 @@ header{
 .desc{
     font-size: 16px;
     color: #39b54a;
-    width: 70%;
+    text-size-adjust: 70%;
     text-align: right;
     padding: 1px
 }
 .precio{
     font-size: 18px;
-    width: 30%;
-    max-width: 300px;
+    text-size-adjust: 30%;
     text-align: left;
 }
 
@@ -201,8 +200,12 @@ i.camion{
     .logo{
         width: 30%;
     }
+.camion{
+transition: transform 8ms;
+}
+
     article:hover .camion{
-        transform: rotateX(+90deg)
+        transform: rotate(-90deg)
        }
      .prod{
         flex-direction: row;
